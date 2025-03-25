@@ -256,10 +256,7 @@ option{
 }
 
 /*footer*/
-/* footer {
-    margin-top: 15px;
-} */
-
+/* Panel 1 - Back to Top */
 .foot-panel1 {
     background-color: #37475a;
     height: 50px;
@@ -267,28 +264,35 @@ option{
     justify-content: center;
     align-items: center;
     font-size: 0.95rem;
-    
 }
-.foot-panel1 a{
+.foot-panel1 a {
     text-decoration: none;
-    color: #e2e7e6;
+    color: white;
 }
 .foot-panel1 a:hover {
-    color: white; 
     text-decoration: underline;
 }
 
+/* Panel 2 - Main Footer Section */
 .foot-panel2 {
     background-color: #222f3d;
     color: #ddd;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 ul {
     margin-top: 20px;
+    list-style: none;
+    padding: 0; 
+}
+
+
+ul p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
 }
 
 ul a {
@@ -296,33 +300,42 @@ ul a {
     font-size: 0.85rem;
     margin-top: 10px;
     color: #dddddd;
+    text-decoration: none; 
 }
-.social-link{
-    text-decoration: none;
+
+ul a:hover {
+    text-decoration: underline; 
 }
-.social-link:hover{
-    text-decoration: underline;
-}
+
+/* Panel 4 - Footer Bottom */
 .foot-panel4 {
     background-color: #0f1111;
-    color: white;
+    color: white; 
     height: 80px;
     font-size: 0.7rem;
     text-align: center;
-
 }
 
+/* Pages Section */
 .pages {
-
-
     padding-top: 20px;
 }
 
+.pages a {
+    color: white !important; 
+    text-decoration: none; 
+    margin: 0 5px;
+}
+
+.pages a:hover {
+    text-decoration: underline; 
+}
+
+/* Copyright Section */
 .copy-right {
-
-
     padding-top: 5px;
 }
+
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
