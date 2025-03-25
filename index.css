@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    top: 0;
+    left:0;
+}
+
+/* Logo Styling */
+.nav-logo {
+    height: 50px;
+    width: 120px;
+}
+
+.logo {
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    background-image: url("image/amazon_logo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* .navbar .logo span {
+    color: #f08804;
+} */
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Address Section */
+.nav-address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.address-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.8rem;
+}
+
+.add-second {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Search Box */
+.nav-search {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 60px;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-icon {
+    height: 100%;
+    width: 50px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #e68a00;
+}
+
+/* Sign-in & Orders Section */
+.nav-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.nav-first {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+.nav-second {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Cart */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+option{
+    text-align: left;
+    padding-left: 0px;
+}
+
+/**panel**/
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: #ddd;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/*hero section*/
+.hero-section {
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh._CB555261616_.jpg");
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+/* Hero Message Box */
+.hero-message-box {
+    background-color: white;
+    color: black;
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 550px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-message-box p {
+    text-align: center;
+}
+
+.hero-message-box a {
+    color: blue;
+}
+
+/*shop section*/
+.shop-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #e2e7e6;
+    padding: 20px;
+}
+
+.box {
+    height: 350px; /* Sabhi boxes ki height same rakho */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Content ko space out karega */
+    align-items: center;
+    padding: 20px;
+}
+
+.box-img {
+    width: 100%; 
+    height: 250px; 
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+}
+
+.box-content {
+    text-align: center;
+    width: 100%;
+}
+
+.box-content p {
+    margin-top: 10px;
+}
+.box-para a{
+    text-decoration: none;
+    color: black;
+}
+.box-para a:hover {
+    color: blue; 
+    text-decoration: underline;
+}
+
+/*footer*/
+/* footer {
+    margin-top: 15px;
+} */
+
+.foot-panel1 {
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    
+}
+.foot-panel1 a{
+    text-decoration: none;
+    color: #e2e7e6;
+}
+.foot-panel1 a:hover {
+    color: white; 
+    text-decoration: underline;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: #ddd;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+.social-link{
+    text-decoration: none;
+}
+.social-link:hover{
+    text-decoration: underline;
+}
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.pages {
+
+
+    padding-top: 20px;
+}
+
+.copy-right {
+
+
+    padding-top: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        position: static; /* Fixed hatane ke liye */
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+    }
+    .panel {
+        position: static; /* Panel bhi fixed nahi hoga */
+    }
+    .nav-search {
+        width: 90%;
+        margin-top: 10px;
+    }
+    .nav-option {
+        align-items: center;
+        text-align: center;
+    }
+    .nav-cart {
+        justify-content: center;
+    }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px; /* Tablet screens ke liye height chhoti */
+        margin-top: 0px;
+        background-size: cover;
+        background-position: center top; /* Image ko achhe se dikhane ke liye */
+    }
+
+    .hero-message-box {
+        top: 600px; 
+        width: 80%;
+        font-size: 0.9rem;
+        padding: 10px;
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+}
+
+/* Responsive Shop Section */
+@media (max-width: 1024px) {
+    .shop-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box {
+        height: auto;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .foot-panel1 {
+        margin-top: 0px;
+    }
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .foot-panel3 {
+        height: auto;
+        padding: 10px;
+    }
+    .foot-panel4 {
+        height: auto;
+        padding: 10px;
+    }
+}
